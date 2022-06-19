@@ -16,10 +16,11 @@ on your hard drive.
 **gpgenv** aims to solve this by acting as a wrapper around applications that injects your secrets
 as environment variables from a GPG-encrypted store.
 
-When combined with an OpenPGP smartcard like a YubiKey 5, your secrets are secured by a second
-factor of authentication, protecting you against any software-based attacks.
+gpgenv is best combined with an OpenPGP smartcard like a YubiKey 5. When touch is required for GPG,
+it makes it extremely difficult for malicious software to silently intercept your secrets. [We've written a guide on how
+to set up a YubiKey here.](docs/YubiKey.md)
 
-## Installation
+## Installation & Dependencies
 
 You can download the binary from the GitHub releases page, or install via Homebrew.
 
@@ -27,6 +28,8 @@ You can download the binary from the GitHub releases page, or install via Homebr
 brew tap notfromstatefarm/gpgenv
 brew install gpgenv
 ```
+
+You will also need to install `gpg` itself if you have not already.
 
 ## Usage
 
@@ -71,3 +74,4 @@ For example, if you'd like to alias `terraform` to always use the `tf` context, 
 ```shell
 terraform() { gpgenv tf terraform "$@" }
 ```
+
