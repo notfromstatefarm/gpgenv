@@ -11,7 +11,7 @@ func printUsage() {
 
 Usage:
   gpgenv [context] [command]		Executes a command
-  gpgenv edit						Opens your editor to edit .gpgenv (set EDITOR environment variable to change editor)
+  gpgenv edit				Opens your editor to edit .gpgenv (set EDITOR environment variable to change editor)
 `)
 }
 
