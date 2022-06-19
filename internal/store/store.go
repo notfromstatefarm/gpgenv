@@ -98,5 +98,10 @@ func (s *Store) Write() error {
 		return err
 	}
 
+	err = os.Chmod(path, 0600)
+	if err != nil {
+		return err
+	}
+	
 	return nil
 }
