@@ -21,7 +21,12 @@ factor of authentication, protecting you against any software-based attacks.
 
 ## Installation
 
-TODO
+You can download the binary from the GitHub releases page, or install via Homebrew.
+
+```
+brew tap notfromstatefarm/gpgenv
+brew install gpgenv
+```
 
 ## Usage
 
