@@ -31,3 +31,5 @@ brews:
     tap:
       owner: notfromstatefarm
       name: homebrew-gpgenv
+    dependencies:
+      - name: gpg
